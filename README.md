@@ -1,5 +1,13 @@
 PlaneCurveFormulas.wl is a package for Wolfram language / Mathematica.
 
+Parametric formulas of about 40 special plane curves. e.g.
+
+```
+Ellipse[e][t]
+```
+
+ returns a parametric formula for a ellipse with eccentricity e and dummy parameter t.
+
 It is basically a collection of parametric equations for named plane curves, so that you can type a curve by name instead of remembering its formulas.
 
 PlaneCurveFormulas.wl
