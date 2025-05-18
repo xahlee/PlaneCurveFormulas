@@ -8,7 +8,7 @@
 
 :URL: http://xahlee.info/M/plane_curve_formulas.html
 
-:Package Version: 2.1.20240717212814
+:Package Version: 2.1.20250516081514
 
 :Discussion:
 
@@ -232,7 +232,7 @@ Hypocycloid::usage =
 "Hypocycloid[n][t] return a parametrization of hypocycloid of n cusp.
 Hypocycloid is defined as the trace of, a point on a circle that
 rolls around the inside of a fixed circle.
-n is an integer greater than 2. Also see ?Hypotrochoid.
+n is an integer greater than 2.
 Example:
 ParametricPlot[ Hypocycloid[6][t], {t,0, 2 Pi}]
 ";
@@ -275,7 +275,8 @@ ParametricPlot[ Evaluate@ LemniscateOfGerono[][t], {t,0, 2 Pi}]
 
 LimaconOfPascal::usage =
 "LimaconOfPascal[r,b][t] return a parametrization for the curve limacon of Pascal.
-r > 0, b >= 0. Parameter range: 0 <= t < 2 Pi.
+r > 0, b >= 0.
+Parameter range: 0 <= t < 2 Pi.
 
 This parametrization is defined as conchoid of a circle of radius r with respect to a point on the circle, and offset {b,-b}.
 Cartesian equation is
@@ -295,7 +296,6 @@ ParametricPlot[ Evaluate@ Lituus[][t], {t, 0.05, 6 2 Pi}, PlotRange->All, Aspect
 Nephroid::usage =
 "Nephroid[][t] return a parametrization for the curve nephroid.
 Parameter range: 0 <= t < 2 Pi.
-* Nephroid is a special case of epitrochoid (see ?Epitrochoid).
 * It is the catacaustic of a circle, with lightsource at infinity.
 Example:
 ParametricPlot[ Evaluate@ Nephroid[][t], {t, 0, 2 Pi}]
@@ -334,14 +334,9 @@ ParametricPlot[ Evaluate@ QuadratrixOfHippias[][t], {t, -3 Pi, 3 Pi}, PlotRange-
 
 Rose::usage =
 "Rose[n][t] return a parametrization for the curve rose with n petals.
-n >= 2. Parameter range: 0 <= t < Pi or 2 Pi.
+n >= 2.
+Parameter range: 0 <= t < Pi or 2 Pi.
 
-The polar equation for rose is r == Cos[n theta].
-If n is odd, the rose will have n pedals.
-If n is even, it will have 2 n pedals.
-Rose is a special case of hypotrochoid. See ?Hypotrochoid for detail.
-Rose with 3 petals are called trifolium, 4:quadrifolium.
-Rose is also known as Rhodonea.
 Example:
 ParametricPlot[ Evaluate@ Rose[3][t],{t, 0,  Pi}]
 ";
